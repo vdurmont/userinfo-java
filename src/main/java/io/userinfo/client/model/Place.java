@@ -1,5 +1,10 @@
 package io.userinfo.client.model;
 
+/**
+ * This class represents a place returned by the userinfo.io API.
+ *
+ * @author Vincent DURMONT [vdurmont@gmail.com]
+ */
 public class Place {
     private String code;
     private String name;

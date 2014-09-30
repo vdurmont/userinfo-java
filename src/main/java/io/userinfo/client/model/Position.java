@@ -1,5 +1,10 @@
 package io.userinfo.client.model;
 
+/**
+ * This class represents a position returned by the userinfo.io API.
+ *
+ * @author Vincent DURMONT [vdurmont@gmail.com]
+ */
 public class Position {
     private Double latitude;
     private Double longitude;

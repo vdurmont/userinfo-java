@@ -2,6 +2,11 @@ package io.userinfo.client.model;
 
 import org.joda.time.DateTime;
 
+/**
+ * This class represents an information on a user returned by the userinfo.io API.
+ *
+ * @author Vincent DURMONT [vdurmont@gmail.com]
+ */
 public class Info {
     private DateTime requestDate;
     private String ipAddress;

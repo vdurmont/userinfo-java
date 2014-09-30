@@ -18,10 +18,18 @@ import retrofit.converter.GsonConverter;
 import java.lang.reflect.Type;
 import java.util.Date;
 
+/**
+ * userinfo.io API wrapper.
+ *
+ * @author Vincent DURMONT [vdurmont@gmail.com]
+ */
 public class UserInfo {
     private static final UserInfoService SERVICE;
     private static final String VERSION_ID = "userinfo-java-1.0.0-SNAPSHOT";
 
+    /**
+     * Initializes the UserInfo wrapper: loads a retrofit service for userinfo API
+     */
     static {
         Gson gson = new GsonBuilder()
                 .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
@@ -35,6 +43,13 @@ public class UserInfo {
         SERVICE = restAdapter.create(UserInfoService.class);
     }
 
+    /**
+     * Gets the {@link io.userinfo.client.model.Info} object associated with the given IP address.
+     *
+     * @param ipAddress the IP address to locate
+     * @return the {@link io.userinfo.client.model.Info} associated to the given IP address
+     * @throws retrofit.RetrofitError is thrown if the API is not available or if the IP address is malformed
+     */
     public static Info getInfo(String ipAddress) {
         return SERVICE.getInfos(VERSION_ID, ipAddress);
     }

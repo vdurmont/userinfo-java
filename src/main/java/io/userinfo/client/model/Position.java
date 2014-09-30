@@ -33,4 +33,12 @@ public class Position {
     public void setAccuracy(Double accuracy) {
         this.accuracy = accuracy;
     }
+
+    @Override public String toString() {
+        return "Position{" +
+                "latitude=" + latitude +
+                ", longitude=" + longitude +
+                ", accuracy=" + accuracy +
+                '}';
+    }
 }

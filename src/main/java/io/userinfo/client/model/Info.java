@@ -62,4 +62,15 @@ public class Info {
     public void setCity(Place city) {
         this.city = city;
     }
+
+    @Override public String toString() {
+        return "Info{" +
+                "requestDate=" + requestDate +
+                ", ipAddress='" + ipAddress + '\'' +
+                ", position=" + position +
+                ", continent=" + continent +
+                ", country=" + country +
+                ", city=" + city +
+                '}';
+    }
 }

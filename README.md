@@ -5,13 +5,15 @@ Java wrapper for [userinfo.io](http://userinfo.io) API.
 
 ## Install
 
-The wrapper has not been published on the maven central repository yet so you will have to clone this github repository, launch `mvn clean install` and add this dependency to your `pom.xml`:
+Simply add this dependency to your `pom.xml`:
 
     <dependency>
       <groupId>io.userinfo</groupId>
       <artifactId>userinfo-java<artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>1.0.0</version>
     </dependency>
+
+You can also clone this github repository and launch `mvn clean install`.
 
 ## Usage
 

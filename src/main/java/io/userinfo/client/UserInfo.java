@@ -37,7 +37,7 @@ public class UserInfo {
                 .create();
 
         RestAdapter restAdapter = new RestAdapter.Builder()
-                .setEndpoint("http://api.userinfo.io")
+                .setEndpoint("https://api.userinfo.io")
                 .setConverter(new GsonConverter(gson))
                 .build();
         SERVICE = restAdapter.create(UserInfoService.class);

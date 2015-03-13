@@ -25,7 +25,7 @@ import java.util.Date;
  */
 public class UserInfo {
     private static final UserInfoService SERVICE;
-    protected static final String CLIENT_VERSION_ID = "userinfo-java:1.0.0";
+    protected static final String CLIENT_VERSION_ID = "userinfo-java:1.1.0";
 
     /**
      * Initializes the UserInfo wrapper: loads a retrofit service for userinfo API

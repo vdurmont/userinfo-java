@@ -48,7 +48,7 @@ The `retrofit.RetrofitError` has a useful `getResponse()` method that will give 
 
 * `Double getLatitude()`: the latitude
 * `Double getLongitude()`: the longitude
-* `Double getAccurracy()`: the accuracy (in km)
+* `Double getAccuracy()`: the accuracy (in km)
 
 ### Place
 
